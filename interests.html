@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interests &amp; Extracurriculars | My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <span class="brand">Your Name</span>
+    <a href="index.html">About Me</a>
+    <a href="resume.html">Resume / CV</a>
+    <a href="interests.html" class="active">Interests</a>
+    <a href="projects.html">Projects</a>
+    <a href="social.html">Social Media</a>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <h1>Interests &amp; Extracurriculars</h1>
+    <p>The activities, causes, and passions that shape who I am outside the classroom.</p>
+  </section>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+
+    <h2>What I'm Involved In</h2>
+    <div class="placeholder-note">
+      ✏️ Add at least 3 highlights below. Each card needs a photo and at least 50 words of description.
+      Replace the placeholder images with real photos stored in your <code>images/</code> folder.
+      Highlight things that distinguish you: volunteer work, clubs, charity, sports, hobbies, etc.
+    </div>
+
+    <div class="highlight-grid">
+
+      <!-- ===== Highlight 1 ===== -->
+      <div class="highlight-card">
+        <!-- Replace src with your image, e.g. images/volunteer.jpg -->
+        <img src="https://placehold.co/600x360/2c3e50/ffffff?text=Activity+Photo+1"
+             alt="[Activity 1 name]" />
+        <div class="hc-body">
+          <h3>[Activity / Interest Title 1]</h3>
+          <p>
+            Describe this activity in at least 50 words. What is it? How long have you been involved?
+            What role do you play? What impact has it had on your community or on you personally?
+            What have you learned from this experience that you carry into other areas of your life?
+            Be specific — specific details make your story memorable.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== Highlight 2 ===== -->
+      <div class="highlight-card">
+        <img src="https://placehold.co/600x360/2980b9/ffffff?text=Activity+Photo+2"
+             alt="[Activity 2 name]" />
+        <div class="hc-body">
+          <h3>[Activity / Interest Title 2]</h3>
+          <p>
+            Describe this activity in at least 50 words. Consider explaining why you started, what
+            challenges you faced, any leadership or teamwork aspects, and how it connects to your broader
+            goals or personal brand. Authenticity is key — let your genuine enthusiasm come through in
+            the way you write about this experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== Highlight 3 ===== -->
+      <div class="highlight-card">
+        <img src="https://placehold.co/600x360/27ae60/ffffff?text=Activity+Photo+3"
+             alt="[Activity 3 name]" />
+        <div class="hc-body">
+          <h3>[Activity / Interest Title 3]</h3>
+          <p>
+            Describe this activity in at least 50 words. Think about community impact, skills developed,
+            or personal growth. If you have received any recognition or achieved milestones in this area,
+            mention them here. Explain how this activity connects with your values and long-term vision
+            for the kind of professional and person you want to become.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== Optional: Add more cards by copying a block above ===== -->
+
+    </div>
+
+    <!-- Extra context -->
+    <h2>Why These Experiences Matter</h2>
+    <div class="card">
+      <div class="placeholder-note">
+        ✏️ Optional — write a short paragraph tying your interests together and explaining what they
+        reveal about your character, values, or direction.
+      </div>
+      <p>
+        [Write 2–3 sentences connecting your extracurricular involvement to who you are and what you
+        brings to academic, professional, or community settings. Example: "My involvement in [X] taught
+        me [skill], which directly informs how I approach [Y]. Together, these experiences have built a
+        foundation of [value/trait] that I carry into every new challenge."]
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> [Your Name] &mdash; All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

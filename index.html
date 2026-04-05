@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <span class="brand">Your Name</span>
+    <a href="index.html" class="active">About Me</a>
+    <a href="resume.html">Resume / CV</a>
+    <a href="interests.html">Interests</a>
+    <a href="projects.html">Projects</a>
+    <a href="social.html">Social Media</a>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Get to know me — my story, my passions, and my goals.</p>
+  </section>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+
+    <!-- About Me -->
+    <h2>About Me</h2>
+    <div class="card">
+      <div class="placeholder-note">
+        ✏️ Replace the paragraph below with your own 250+ word bio. Aim for a warm, personal tone
+        that tells visitors who you are, what makes you unique, and what they will find on this portfolio.
+      </div>
+
+      <p>
+        Hello and welcome! My name is <strong>[Your Name]</strong>, and I am so glad you stopped by.
+        I am a [student / professional / creative] with a passion for [your field or interest].
+        Growing up in [your hometown or region], I developed an early curiosity about [topic], which
+        has shaped everything I do today.
+      </p>
+      <p>
+        Throughout my academic career at [Your School / University], I have been fortunate to explore
+        courses in [relevant subjects] that have deepened my understanding of [field]. Outside the
+        classroom, I spend my time [hobby 1], [hobby 2], and [hobby 3], all of which fuel my creativity
+        and keep me grounded. I believe that a well-rounded perspective — one that combines technical
+        knowledge with real-world curiosity — is what sets great work apart from merely good work.
+      </p>
+      <p>
+        What makes me unique? I bring [quality 1], [quality 2], and [quality 3] to everything I take on.
+        Whether I am working independently on a side project or collaborating with a team, I prioritize
+        clear communication, attention to detail, and a genuine enthusiasm for learning. I am not afraid
+        to step outside my comfort zone, and I believe that growth happens precisely at the edges of what
+        we already know.
+      </p>
+      <p>
+        This digital portfolio exists to give you an honest and organized window into my journey. Here you
+        will find my <a href="resume.html">resume</a>, highlights of my <a href="interests.html">extracurricular
+        activities and interests</a>, a showcase of my <a href="projects.html">academic and personal projects</a>,
+        and links to my <a href="social.html">social media profiles</a>. My goal is not simply to list
+        accomplishments, but to tell the story behind them — the challenges I faced, the lessons I learned,
+        and the excitement I carry into every new opportunity.
+      </p>
+      <p>
+        Thank you for taking the time to visit. I invite you to explore, and please do not hesitate to
+        reach out — I am always open to conversations about [your field], new collaborations, or even just
+        a good book recommendation. I look forward to connecting with you!
+      </p>
+    </div>
+
+    <!-- Photos -->
+    <h2>A Little More About Me</h2>
+    <div class="placeholder-note">
+      ✏️ Replace the placeholder images below. Use a professional-looking photo of yourself and a
+      second photo that represents your interests or field. Avoid selfies; natural-light or indoor
+      candid shots in appropriate attire work great.
+    </div>
+
+    <div class="picture-row">
+      <div class="pic-item">
+        <!-- Replace src with your actual image path, e.g. images/headshot.jpg -->
+        <img src="https://placehold.co/400x480/2c3e50/ffffff?text=Your+Photo+Here"
+             alt="Professional photo of [Your Name]" />
+        <p>[Your Name] — [Brief title or tagline]</p>
+      </div>
+      <div class="pic-item">
+        <!-- Replace src with a photo that represents your interests -->
+        <img src="https://placehold.co/400x480/2980b9/ffffff?text=Interest+Photo+Here"
+             alt="Photo representing my interests" />
+        <p>[Caption describing your interest or activity]</p>
+      </div>
+    </div>
+
+    <!-- Quick facts / additional info -->
+    <h2>Quick Facts</h2>
+    <div class="card">
+      <div class="placeholder-note">
+        ✏️ Optionally add a quick-facts section, a fun list, or anything else that reflects your personality.
+      </div>
+      <ul style="padding-left:1.4rem; line-height:2;">
+        <li><strong>Currently studying / working at:</strong> [Institution / Company]</li>
+        <li><strong>Field of interest:</strong> [Your Field]</li>
+        <li><strong>Currently learning:</strong> [Skill or Topic]</li>
+        <li><strong>Fun fact:</strong> [Something memorable about you]</li>
+        <li><strong>Contact:</strong> <a href="mailto:your@email.com">your@email.com</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> [Your Name] &mdash; All rights reserved.</p>
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
