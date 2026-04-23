@@ -3,75 +3,336 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome | My Portfolio</title>
+  <title>Henry Miller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <nav>
-    <span class="brand">Henry Miller</span>
-    <a href="index.html" class="active">About Me</a>
-    <a href="resume.html">Resume / CV</a>
-    <a href="interests.html">Interests</a>
-    <a href="projects.html">Projects</a>
-    <a href="social.html">Social Media</a>
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <span class="brand">hm.</span>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#resume">resume</a>
+      <a href="#projects">projects</a>
+      <a href="#interests">interests</a>
+      <a href="#contact">contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">hey, i'm</p>
+      <h1 class="hero-name">Henry Miller</h1>
+      <p class="hero-sub">CS student <span class="hero-at">@</span> CU Boulder &nbsp;&middot;&nbsp; builder &nbsp;&middot;&nbsp; explorer</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">see my work</a>
+        <a href="#contact" class="btn btn-ghost">get in touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">scroll &#8595;</a>
   </section>
 
-  <!-- ===== Main Content ===== -->
-  <main>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">who i am</div>
+      <h2 class="section-heading">About Me</h2>
 
-    
+      <div class="about-grid">
+        <div class="about-text animate">
+          <p>
+            I'm Henry! I'm a senior studying Computer Science at CU Boulder, and I'm passionate about
+            learning, building, and exploring. Over the years I've developed my skills through a mix of
+            coursework, personal projects, startup experiences, and internships. I love tackling challenges
+            that push me to try new approaches — whether it's designing my One Pic A Day app, experimenting
+            with startups like PerfectHomeFinder, or just picking up a new technology for fun.
+          </p>
+          <p>
+            My internship at Cognizant gave me the chance to see how software development works in a
+            fast-paced, collaborative environment, and taught me how to contribute effectively on a team
+            while delivering meaningful work.
+          </p>
+          <p>
+            Outside of coding, I love the outdoors — climbing, hiking, and snowboarding. Living near
+            Boulder makes these things super accessible and I'm always trying to take advantage of it.
+            I also enjoy gaming as a way to stay connected with long-distance friends. Currently playing
+            Hollow Knight and League of Legends.
+          </p>
+        </div>
 
-    <!-- About Me -->
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I’m Henry! I’m a senior studying Computer Science at CU Boulder, and I’m passionate about learning, building, and exploring. Over the years, I’ve developed my skills through a mix of coursework, personal projects, startup experiences, and internships. I love tackling challenges that push me to try new approaches, whether it’s designing my One Pic A Day app, experimenting with startups like PerfectHomeFinder, or learning new technologies on my own. My internship at Cognizant gave me the chance to see how software development works in a fast-paced, collaborative environment, and taught me how to contribute effectively on a team while delivering meaningful work.
-      </p>
-      <p>
-        Outside of coding, I love the outdoors doing activities such as climbing, hiking, and snowboarding. Living in an area such as CU Boulder makes these things super accessible and I am always trying to take advantage of it. I also enjoy playing video games, as it's a fun and easy way to stay connected with long distance friends. Some games I have been playing recently are Hollow Knight and League of Legends.
-      </p>
-      <p>
-        This portfolio is my space to share who I am, what I’ve built, and the skills I’ve gained along the way. Throughout my portfolio you’ll find highlights of my projects, my experiences in tech, and some insights into what drives me to excel in the field of Computer Science. My goal is to give the audience a sense of my curiosity, my work ethic, and my love for experimenting. I hope you enjoy exploring it and learning a bit more about me I’m always excited to connect with people who share similar interests or passions for building and innovating.
-      </p>
-    </div>
-
-    <!-- Photos -->
-    <h2>A Little More About Me</h2>
-
-    <div class="picture-row">
-      <div class="pic-item">
-        <img src="images/headshot.jpg"
-             alt="Professional photo of Henry Miller" />
+        <div class="about-sidebar animate">
+          <div class="about-photos">
+            <img src="images/headshot.jpg" alt="Henry Miller" class="about-photo" />
+            <img src="images/professional pic.jpg" alt="Henry Miller" class="about-photo about-photo--back" />
+          </div>
+          <div class="quick-facts">
+            <h3>quick facts</h3>
+            <ul>
+              <li><span class="fact-icon">&#127891;</span> CU Boulder &middot; CS + Math minor</li>
+              <li><span class="fact-icon">&#128187;</span> Currently deep into AI / ML</li>
+              <li><span class="fact-icon">&#127956;</span> Climber, snowboarder, hiker</li>
+              <li><span class="fact-icon">&#9993;</span> <a href="mailto:henrymmiller18@gmail.com">henrymmiller18@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="pic-item">
-        <img src="images/professional pic.jpg"
-             alt="Henry Miller — professional photo" />
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume">
+    <div class="section-inner">
+      <div class="section-label">experience</div>
+      <h2 class="section-heading">Resume / CV</h2>
+      <div class="resume-wrap animate">
+        <iframe
+          class="resume-embed"
+          src="images/Henry_Miller_Resume.pdf"
+          title="Henry Miller Resume / CV">
+        </iframe>
+        <p class="resume-dl">
+          <a href="images/Henry_Miller_Resume.pdf" target="_blank" rel="noopener">Download PDF &#8594;</a>
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- Quick facts / additional info -->
-    <h2>Quick Facts</h2>
-    <div class="card">
-      <ul style="padding-left:1.4rem; line-height:2;">
-        <li><strong>Currently studying / working at:</strong> CU Boulder</li>
-        <li><strong>Field of interest:</strong> Computer Science</li>
-        <li><strong>Currently learning:</strong> AI/ML and Software Development</li>
-        <li><strong>Contact:</strong> <a href="mailto:henrymmiller18@gmail.com">henrymmiller18@gmail.com</a></li>
-      </ul>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">what i've built</div>
+      <h2 class="section-heading">Projects &amp; Experience</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card animate">
+          <div class="project-img-wrap">
+            <img src="images/cognizant-logo.png" alt="Cognizant" class="project-img project-img--logo" />
+          </div>
+          <div class="project-body">
+            <h3>Software Developer Intern &mdash; Cognizant/TriZetto</h3>
+            <p>This summer internship involved working on a 9-person agile team to build AI-powered tooling
+            for healthcare contract analysis. I developed full-stack features using Azure Doc Intelligence,
+            OpenAI, and Azure AI Search, including a React frontend and chatbot that let clients query
+            provider contracts directly. The solution cut contract review time by 95% while maintaining 95%
+            accuracy — and we also experimented with agentic AI to configure information onto client websites
+            automatically. A great way to get real-world experience building AI applications while doing
+            daily standups, talking to clients, and shipping meaningful work.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate">
+          <div class="project-img-wrap">
+            <img src="images/festo-logo.png" alt="Festo" class="project-img project-img--logo" />
+          </div>
+          <div class="project-body">
+            <h3>Agentic AI Frontend Generator &mdash; Festo Capstone</h3>
+            <p>We built a full-stack application that converts natural language input into functional
+            frontend designs aligned with Festo's design standards, hosted on AWS. The system orchestrates
+            multiple specialized AI agents — an orchestrator, planning, architecture, frontend development,
+            and integration agents — to generate accurate, maintainable, production-ready code. We presented
+            the project to Festo executives and at the annual CU Boulder Engineering Expo.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate">
+          <div class="project-img-wrap">
+            <img src="images/house.jpg" alt="PerfectHomeFinder" class="project-img" />
+          </div>
+          <div class="project-body">
+            <h3>PerfectHomeFinder &mdash; AI Home Search Startup</h3>
+            <p>Developed an AI-driven platform to help users find homes by answering natural language
+            queries across a wide range of factors. Built with Flask and transformer models, the platform
+            tested multiple LLMs including ChatGPT, Diablo, and Ollama alongside public real estate APIs
+            and datasets to deliver intelligent, personalized property recommendations.</p>
+          </div>
+        </div>
+
+        <div class="project-card animate">
+          <div class="project-img-wrap">
+            <img src="images/hackcu-logo.png" alt="HackCU" class="project-img project-img--logo" />
+          </div>
+          <div class="project-body">
+            <h3>HackCU &mdash; Hackathon</h3>
+            <p>Won 3rd in the general track for HackCU12 with our project Presense.ai — a mock interviewing
+            application powered by Claude and Grok. Users upload their resume and/or job description and get
+            a custom-tailored interview experience with options for behavioral, technical, or both. The app
+            also gives feedback on answers with suggestions for improvement.</p>
+            <a href="https://devpost.com/software/presence-ai" target="_blank" rel="noopener" class="project-link">View on Devpost &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section animate">
+        <h3>skills</h3>
+        <div class="skill-tags">
+          <span class="tag tag-purple">React</span>
+          <span class="tag tag-cyan">Python</span>
+          <span class="tag tag-green">Flask</span>
+          <span class="tag tag-purple">Azure</span>
+          <span class="tag tag-cyan">AWS</span>
+          <span class="tag tag-green">OpenAI</span>
+          <span class="tag tag-purple">Agentic AI</span>
+          <span class="tag tag-cyan">Machine Learning</span>
+          <span class="tag tag-green">Agile / Scrum</span>
+          <span class="tag tag-purple">REST APIs</span>
+          <span class="tag tag-cyan">NLP</span>
+          <span class="tag tag-green">Full-Stack Dev</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </main>
+  <!-- ===== INTERESTS ===== -->
+  <section id="interests">
+    <div class="section-inner">
+      <div class="section-label">beyond the screen</div>
+      <h2 class="section-heading">Interests &amp; Adventures</h2>
 
+      <div class="interests-grid">
+
+        <div class="interest-card animate">
+          <div class="interest-images interest-images--double">
+            <img src="images/acatenango hike.jpg" alt="Hiking up Acatenango Volcano, Guatemala" />
+            <img src="images/acatenango volcano.jpg" alt="View of the volcanic crater from the summit" />
+          </div>
+          <div class="interest-body">
+            <h3>Hiking Acatenango Volcano, Guatemala</h3>
+            <p>One of my most recent hikes and also my most enjoyable. Getting out of the country to
+            Guatemala and hiking this volcano was a once-in-a-lifetime opportunity — a very challenging
+            2-day trek, but the views were absolutely incredible.</p>
+          </div>
+        </div>
+
+        <div class="interest-card animate">
+          <div class="interest-images">
+            <img src="images/snowboarding.jpg" alt="Snowboarding" />
+          </div>
+          <div class="interest-body">
+            <h3>Snowboarding</h3>
+            <p>Something I really got into during my time at CU Boulder, having the mountains so close by.
+            I always try to get up when I can — it's a great way to step away from schoolwork and just
+            be outside.</p>
+          </div>
+        </div>
+
+        <div class="interest-card animate">
+          <div class="interest-images interest-images--double">
+            <img src="images/big ben.jpg" alt="Big Ben, London" />
+            <img src="images/brandenburg.jpg" alt="Brandenburg Gate, Berlin" />
+          </div>
+          <div class="interest-body">
+            <h3>Travelling</h3>
+            <p>While travelling isn't an everyday hobby, I've been fortunate to explore some amazing places.
+            I studied abroad during Spring 2025 and really got to explore various countries and cities
+            across Europe.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="interests-note animate">
+        <p>While these experiences don't directly correlate to my field of study, they're important parts
+        of my life and shape who I am — which reflects in my work and how I approach challenges. One of
+        the biggest things for me in recent years is getting out of my comfort zone and trying new things,
+        whether I enjoy them or not.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">let's talk</div>
+      <h2 class="section-heading">Get In Touch</h2>
+      <p class="contact-intro animate">Connect with me on LinkedIn, check out my code on GitHub, or just shoot me an email.</p>
+
+      <div class="contact-grid">
+
+        <a href="http://linkedin.com/in/henrymmiller/" target="_blank" rel="noopener" class="contact-card animate">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-handle">linkedin.com/in/henrymmiller</span>
+          </div>
+        </a>
+
+        <a href="http://github.com/hemi9536" target="_blank" rel="noopener" class="contact-card animate">
+          <i class="fab fa-github contact-icon"></i>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-handle">github.com/hemi9536</span>
+          </div>
+        </a>
+
+        <a href="mailto:henrymmiller18@gmail.com" class="contact-card animate">
+          <i class="fas fa-envelope contact-icon"></i>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-handle">henrymmiller18@gmail.com</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; <span id="yr"></span> Henry Miller &mdash; All rights reserved.</p>
+    <p>built by henry miller &middot; <span id="yr"></span></p>
   </footer>
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+    // Active nav link tracking
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('#navbar .nav-links a');
+    const navbar   = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 130) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    navLinks.forEach(a => {
+      a.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
 </body>
 </html>
