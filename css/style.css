@@ -229,12 +229,12 @@ img {
   font-weight: 700;
   line-height: 1.0;
   letter-spacing: -0.03em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.15em;
   background: linear-gradient(135deg, #ffffff 20%, var(--purple) 55%, var(--cyan) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-sub {
